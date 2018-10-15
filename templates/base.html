@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jessica Malm</title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	 <script src="scripts.js"></script> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body {% block fade %}{% endblock fade %}>
+	<header>
+		<nav id="nav-bar" {% block navbartrans %}{% endblock navbartrans %}>
+			<a class="nav-link nav-1" href="/illustrations">illustration</a>
+			<a class="nav-link nav-2" href="/webdesign">webdesign</a>
+			<a {% block biglogo %}{% endblock biglogo %} class="nav-logo nav-3" href="/"><img id="nav-img-l" src="/100px_01.png"><img id="nav-img-r" src="/100px_04.png"><img {% block bigtitle %}{% endblock bigtitle %} class="title-img" src="/its_jess_logo.png"></a>
+			<a class="nav-link nav-4" href="/blog">blog</a>
+			<a class="nav-link nav-5" href="/shop">shop</a>
+		</nav>
+	</header>
+	
+		{% block content %}
+		{% endblock content %}
+	
+	<footer {% block fixedfooter %}{% endblock fixedfooter %}>
+      <div id="contact-div"> 
+        <div class="contact-tile">
+          <a href="https://github.com/Joeososoi" id="profile-link" target="_blank"><img src="/logo_github.png"></a>
+        </div>
+        
+        <div class="contact-tile">
+          <a href="https://codepen.io/joeososoi/#" target="_blank"><img src="/logo_codepen.png"></a>
+        </div>
+        
+        <div class="contact-tile">
+          <a href="https://www.freecodecamp.org/joeososoi" target="_blank"><img src="/logo_freecodecamp.png"></a>
+        </div>
+
+        <div class="contact-tile">
+          <a href="https://www.linkedin.com/in/jessica-malm-0327a8163/" target="_blank"><img src="/logo_linkedin.png"></a>
+        </div>
+        
+        <div class="contact-tile">
+          <a href="mailto:jessicamalm@web.de" target="_blank"><img src="/logo_mail.png"></a>
+        </div>     
+      </div>
+
+      <div id="legal-links">
+        <p>&copy; Jessica Malm</p>
+        <p><a href="/imprint">imprint</a></p>
+        <p><a href="/privacy">privacy policy</a></p>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block navbartrans %}
+class="nav-bar-trans"
+{% endblock navbartrans %}
+
+{% block content %}
+
+  <main class="transparent">
+  	{{page.content | safe}}
+  	<div id="web-dev-container">
+  		<div class="web-dev-tile">
+  			<a class="web-dev-link" href="https://kakao.jessicamalm.de/" target="_blank"><img src="/webdev_randomwords.png" alt="Random Words">Random Words<p>A generator that will output up to six different random words.</p></a>
+  		</div>
+  		<div class="web-dev-tile">
+  			<a class="web-dev-link" href="https://instajessjess.tumblr.com/" target="_blank"><img src="/webdev_instajessjess.png" alt="Tumblr Theme InstaJessJess">Tumblr Theme: InstaJessJess<p>A clean and minimalistic grid theme.</p></a>
+  		</div>
+  		<div class="web-dev-tile">
+  			<a class="web-dev-link" href="https://codepen.io/joeososoi/full/MBWoJv" target="_blank"><img src="/webdev_fcc_tributepage.png" alt="FCC Tribute Page">FreeCodeCamp: Tribute Page</a>
+  		</div>
+  		<div class="web-dev-tile">
+  			<a class="web-dev-link" href="https://codepen.io/joeososoi/full/MBepyW" target="_blank"><img src="/webdev_fcc_productlandingpage.png" alt="FCC Product Landing Page">FreeCodeCamp: Product Landing Page</a>
+  		</div>
+  		<div class="web-dev-tile">
+  			<a class="web-dev-link" href="https://codepen.io/joeososoi/full/rrOxPZ" target="_blank"><img src="/webdev_fcc_surveyform.png" alt="FCC Survey Form">FreeCodeCamp: Survey Form</a>
+  		</div>
+  	</div>
+  </main>
+
+{% endblock content %}

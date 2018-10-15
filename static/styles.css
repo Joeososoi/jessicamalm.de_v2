@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ======== RESET END ======= */
+
+/* ========= Custom ========= */
+body {
+	height: 100%;
+	font-family: 'Inconsolata', monospace;
+	background-image: url("Fog_background.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+}
+.index-body {
+	opacity: 0;
+	transition: opacity 3s;
+}
+.transparent {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0));
+	min-height: calc(100vh - 215px);
+	padding: 30px 30px 0 30px;
+}
+
+/* ======= Typography ======= */
+h1 {
+	font-size: 2em;
+	padding: 20px 0 40px 0;
+	text-align: center;
+}
+h2 {
+	font-size: 1.5em;
+	padding: 10px 0;
+}
+h3 {
+	font-size: 1.2em;
+	padding: 10px 0;
+}
+p {
+	padding: 5px 0;
+}
+
+/* ======= Navigation ======= */
+#nav-bar {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+.nav-bar-trans {
+background-color: rgba(255, 255, 255, 0.5);
+}
+.nav-logo {
+	width: 100px;
+	display: flex;
+}
+#index-nav-logo {
+	height: 250px;
+	justify-content: center;
+	z-index: -1;
+}
+#nav-img-l {
+	margin: -10px 0 -10px -10px;
+}
+#nav-img-r {
+	margin: -10px -10px -10px 0;
+}
+.title-img {
+	position: absolute;
+	width: 75px;
+	margin: 5px 14px;
+}
+#big-title-img {
+	position: absolute;
+	width: 110px;
+	margin-top: 15px;
+}
+
+/* ======= Webdesign ======== */
+#web-dev-container {
+	column-count: 3;
+	column-gap: 5px;
+	padding-top: 50px;
+	margin: 0 -5px;
+}
+.web-dev-tile {
+	background-color: white;
+	padding: 15px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	column-span: 1;
+	page-break-inside: avoid;
+}
+.web-dev-tile img {
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+/* ========= Footer ========= */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 200px 0 10px 0;
+    font-size: 0.8em;
+}
+#fixed-footer {
+	position: fixed;
+}
+#contact-div {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 8px;
+}
+.contact-tile img {
+	width: 20px;
+	margin: 0 3px;
+}
+#legal-links {
+	display: flex;
+	justify-content: center;
+}
+#legal-links p {
+	padding: 0 6px;
+}
+
+/* ========== Links ========= */
+.nav-link {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	width: 100px;
+	height: 18px;
+	transition: 0.8s;
+}
+.nav-link:hover, {
+	color: white;
+	background-color: black;
+}
+.web-dev-link {
+	text-decoration: none;
+	color: black;
+}
+.illu-link {
+	padding-right: 6px;
+	color: black;
+}
+.illu-link:hover {
+	text-decoration: none;
+}
+#legal-links, #legal-links a {
+	text-decoration: none;
+	color: white;
+}
+#legal-links a:hover {
+	text-decoration: underline;
+}
+
+/* ===== Media Queries ====== */
+@media (max-width: 770px) {
+	#web-dev-container {
+		column-count: 2;
+	}
+}
+@media (max-width: 480px) {
+	#nav-bar {
+		flex-wrap: wrap;
+	}
+	.nav-1 {
+		order: 1;
+		margin-top: 15px;
+	}
+	.nav-3 {
+		order: 2;
+	}
+	.nav-4 {
+		order: 3;
+		margin-top: 15px;
+	}
+	.nav-2 {
+		order: 4;
+		margin: -45px 50px 0 0;
+	}
+	.nav-5 {
+		order: 5;
+		margin: -45px 0 0 50px;
+	}
+	#web-dev-container {
+		column-count: 1;
+	}
+}

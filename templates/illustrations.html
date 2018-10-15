@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <main class="transparent">
+  	{{page.content | safe}}
+  	<div id="web-dev-container">
+  		<div class="web-dev-tile">
+  			<img src="/kakao_18_09.png" alt="Kakao Challenge September">
+  		</div>
+  		<div class="web-dev-tile">
+			<img src="/ninja_01.png" alt="Ninjas Kopf einziehen">
+			<img src="/ninja_02.png" alt="Ninjas Free Wifi">
+			<img src="/ninja_03.png" alt="Ninjas Respektvoll">
+			<p>Ninja Hall Berlin Köpenick</p>
+			<p>Ninja illustrations for usage as signs throughout the NinjaHall building in Köpenick.</p>
+			<p><a class="illu-link" href="ninjahall.de">homepage</a><a class="illu-link" href="https://www.facebook.com/ninjahallberlin/">facebook</a><a class="illu-link" href="https://www.instagram.com/ninjahallberlin/">instagram</a></p>
+  		</div>
+  	</div>	
+  </main>
+
+{% endblock content %}
+
+{% block navbartrans %}
+class="nav-bar-trans"
+{% endblock navbartrans %}
