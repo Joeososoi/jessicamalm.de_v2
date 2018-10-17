@@ -6,14 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 	 <script src="scripts.js"></script> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 </head>
 <body {% block fade %}{% endblock fade %}>
 	<header>
 		<nav id="nav-bar" {% block navbartrans %}{% endblock navbartrans %}>
 			<a class="nav-link nav-1" href="/illustrations">illustration</a>
 			<a class="nav-link nav-2" href="/webdesign">webdesign</a>
-			<a {% block biglogo %}{% endblock biglogo %} class="nav-logo nav-3" href="/"><img id="nav-img-l" src="/100px_01.png"><img id="nav-img-r" src="/100px_04.png"><img {% block bigtitle %}{% endblock bigtitle %} class="title-img" src="/its_jess_logo.png"></a>
+			<a {% block biglogo %}{% endblock biglogo %} class="nav-logo nav-3" href="/"><img id="nav-img-l" {% block imgL %}{% endblock imgL %} src="/100px_01.png"><img id="nav-img-r" {% block imgR %}{% endblock imgR %} src="/100px_04.png"><img {% block bigtitle %}{% endblock bigtitle %} class="title-img" src="/its_jess_logo.png"></a>
 			<a class="nav-link nav-4" href="/blog">blog</a>
 			<a class="nav-link nav-5" href="/shop">shop</a>
 		</nav>

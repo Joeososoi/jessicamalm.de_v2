@@ -97,6 +97,8 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 .nav-logo {
 	width: 100px;
+	height: 100px;
+	justify-content: center;
 	display: flex;
 }
 #index-nav-logo {
@@ -110,10 +112,16 @@ background-color: rgba(255, 255, 255, 0.5);
 #nav-img-r {
 	margin: -10px -10px -10px 0;
 }
+.nav-img {
+	height: 120px;
+}
+.big-img {
+	height: 250px;
+}
 .title-img {
 	position: absolute;
 	width: 75px;
-	margin: 5px 14px;
+	margin: 5px auto;
 }
 #big-title-img {
 	position: absolute;
@@ -183,7 +191,7 @@ footer {
 	height: 18px;
 	transition: 0.8s;
 }
-.nav-link:hover, {
+.nav-link:hover {
 	color: white;
 	background-color: black;
 }
