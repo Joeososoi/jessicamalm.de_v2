@@ -51,16 +51,19 @@ table {
 /* ========= Custom ========= */
 body {
 	height: 100%;
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Quicksand', sans-serif;
 	background-image: url("Fog_background.jpeg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100vw auto;
 	background-position: center bottom;
-	background-attachment: fixed;
+	background-attachment: scroll;
 }
 .index-body {
 	opacity: 0;
 	transition: opacity 3s;
+	height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
 }
 .transparent {
 	background-image: linear-gradient(rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0));
