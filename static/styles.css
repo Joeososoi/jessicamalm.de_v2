@@ -51,6 +51,8 @@ table {
 /* ========= Custom ========= */
 body {
 	height: 100%;
+	display: flex;
+	flex-direction: column;
 	font-family: 'Quicksand', sans-serif;
 	background-image: url("Fog_background.jpeg");
 	background-repeat: no-repeat;
@@ -70,12 +72,30 @@ body {
 	min-height: calc(100vh - 215px);
 	padding: 30px 30px 0 30px;
 }
+li {
+	list-style-type: disc;
+	margin-left: 15px;
+}
 
 /* ======= Typography ======= */
 h1 {
 	font-size: 2em;
 	padding: 20px 0 40px 0;
 	text-align: center;
+}
+.index-h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 10% 60px 10%;
+	padding-bottom: 20px;
+	flex-grow: 1;
+}
+.index-h1 h1 {
+	font-weight: 900;
+	text-shadow: 
+		2px 2px 10px white,
+		-2px -2px 10px white;
 }
 h2 {
 	font-size: 1.5em;
@@ -84,6 +104,9 @@ h2 {
 h3 {
 	font-size: 1.2em;
 	padding: 10px 0;
+}
+h4 {
+	padding-bottom: 10px; 
 }
 p {
 	padding: 5px 0;
@@ -133,6 +156,13 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ======== Projects ======== */
+.description {
+	display: flex;
+	padding: 0 120px;
+}
+.description-left {
+	margin-right: 15px;
+}
 #web-dev-container, #illu-container {
 	column-count: 3;
 	column-gap: 5px;
@@ -165,6 +195,7 @@ footer {
 }
 #fixed-footer {
 	position: fixed;
+	margin: 0 0 10px 0;
 }
 #contact-div {
 	display: flex;
@@ -218,9 +249,36 @@ footer {
 }
 
 /* ===== Media Queries ====== */
+@media (max-width: 1500px) {
+	.description {
+		display: flex;
+		padding: 0 250px;
+	}
+	.description-left {
+		margin-right: 40px;
+	}
+}
+@media (max-width: 1100px) {
+	.description {
+		display: flex;
+		padding: 0 180px;
+	}
+}
 @media (max-width: 770px) {
+	.description {
+		display: flex;
+		padding: 0 40px;
+	}
+	.description-left {
+		margin-right: 25px;
+	}
 	#web-dev-container, #illu-container {
 		column-count: 2;
+	}
+}
+@media (max-height: 435px){
+	.index-h1 {
+		display: none;
 	}
 }
 @media (max-width: 480px) {
@@ -246,7 +304,26 @@ footer {
 		order: 5;
 		margin: -45px 0 0 50px;
 	}
+	.description {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	.description-left {
+		margin-bottom: 40px;
+		margin-right: 0;
+	}
+	.description-right {
+		margin: 0 auto;
+	}
+	.description-right div {
+		display: inline-block;
+	}
 	#web-dev-container, #illu-container {
 		column-count: 1;
+	}
+	.index-h1 {
+		margin: 0 0 60px 0;
+		padding-bottom: 0;
 	}
 }

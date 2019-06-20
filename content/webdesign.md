@@ -10,5 +10,22 @@ draft = false
 +++
 
 <h1>webdesign</h1>
-<p>I do webdesign and web development projects. Playing with colors and fonts is what I enjoy doing the most, always inspired by current trends to achieve a unique and modern look.</p>
-<p>I'm confident with HTML, CSS and JavaScript.</p>
+<div class="description">
+    <div class="description-left">
+        I love designing and building websites with delicate color schemes and characteristic fonts. My clients are small businesses and freelancers who need an easy to navigate online presence that shows their talents, passions and offers to boost their career.
+    </div>
+    <div class="description-right">
+        <div>
+            <h4>tools I enjoy:</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>InDesign</li>
+            </ul>
+        </div>
+    </div>
+</div>
