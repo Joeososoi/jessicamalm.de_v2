@@ -12,7 +12,7 @@ draft = false
 <h1>webdesign</h1>
 <div class="description">
     <div class="description-left">
-        I love designing and building websites with delicate color schemes and characteristic fonts. My clients are small businesses and freelancers who need an easy to navigate online presence that shows their talents, passions and offers to boost their career.
+        I love designing and building websites with delicate color schemes and characteristic fonts. My clients are small businesses and freelancers who need an easy to navigate online presence that shows their talents and passions to boost their career.
     </div>
     <div class="description-right">
         <div>
