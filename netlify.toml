@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/shop"
+  to = "https://www.etsy.com/de/shop/HaseHeisstDerFelix"
+  status = 302
+  force = true
